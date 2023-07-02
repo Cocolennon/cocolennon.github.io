@@ -140,6 +140,7 @@ body {
     border-radius: 50%;
     width: 20px;
     height: 20px;
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
