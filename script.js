@@ -5,3 +5,5 @@ document.onmousemove = function(e) {
     grid.style.left = e.pageX - gridHalfWidth + "px";
     grid.style.top = e.pageY - gridHalfWidth + "px";
 }
+
+document.addEventListener('contextmenu', event => event.preventDefault());
