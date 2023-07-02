@@ -107,14 +107,13 @@ body {
 }
 
 .hsocials {
-    position: fixed;
+    position: absolute;
     top: 50%;
-    left: 5.05%;
-    width: 100%;
+    left: 9.2%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
 }
 
 .socials a {
@@ -123,12 +122,12 @@ body {
     color: #fff;
     font-weight: lighter;
     text-decoration: none;
-    margin-left: 65px;
+    margin-left: 10px;
     transition: .3s;
 }
 
 .button {
-    position: fixed;
+    position: relative;
     background-color: #525050;
     border: none;
     color: white;
