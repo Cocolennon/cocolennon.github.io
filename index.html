@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Cocolennon's Dev Stuff</title>
+        <title id="ltitle">Cocolennon's Dev Stuff</title>
         <link rel="icon" type="image/x-icon" href="favicon.png">
         <meta name="description" content="I'm a 15 year old software and web developer from France.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +12,7 @@
         <meta content="#A020F0" data-react-helmet="true" name="theme-color">
         <meta content="https://www.cocolennon.xyz/favicon.png" property="og:image" />
         <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
         <span class="bg">
@@ -19,14 +20,25 @@
         </span>
         <header class="header">
             <a href="#" class="logo">Cocolennon</a>
-            <!--<nav class="navbar">
+            <nav class="navbar">
+                <!--
                 <a href="#about-me">About Me</a>
                 <a href="#">Projects</a>
                 <a href="#">Contact</a>
-            </nav>-->
+                -->
+                <a href="#" onclick="setLang('en')">English</a>
+                <a href="#" onclick="setLang('fr')">Français</a>
+            </nav>
         </header>
-        <h1 class="name" id="about-me">Sup, my name's <span style="color: darkorchid;">Cocolennon</span> <span class="aka">aka Coco</span></h1>
-        <h1 class="name" id="desc">I'm a 15 year old software and web developer from <span style="color:blue">Fr</span>an<span style="color:red">ce</span>.</h1>
+        <h1 class="name">
+            <span id="lname">Sup, my name's</span>
+            <span style="color: darkorchid;" id="lcoco"> Cocolennon</span>
+            <span class="aka" id="laka"> aka Coco</span>
+        </h1>
+        <h1 class="name" id="desc">
+            <span id="lshort">I'm a 15 year old software and web developer from </span>
+            <span style="color:blue" id="lfr">Fr</span><span id="lan">an</span><span style="color:red" id="lce">ce</span>.
+        </h1>
         <header class="hsocials">
             <nav class="socials">
                 <a href="https://www.youtube.com/@cocolennon_" target="_blank">

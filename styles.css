@@ -65,7 +65,7 @@ body {
     color: #fff;
     font-weight: lighter;
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 3vw;/*40px;*/
     transition: .3s;
 }
 
