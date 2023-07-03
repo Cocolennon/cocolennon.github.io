@@ -29,16 +29,17 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px;
     background:#46354e;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    box-shadow: 0px 0px 30px;
 }
 
 .logo {
-    font-size: 32px;
+    font-size: 16px;
     color: #fff;
     text-decoration: none;
     font-weight: bolder;
@@ -50,7 +51,7 @@ body {
     color: #fff;
     font-weight: lighter;
     text-decoration: none;
-    margin-left: 3vw;/*40px;*/
+    margin-left: 3vw;
     transition: .3s;
 }
 
@@ -77,50 +78,52 @@ body {
 
 .name {
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 15%;
+    left: 3%;
     color: #fff;
-    font-size: 44px;
+    font-size: 32px;
 }
 
 .aka {
     color: rgb(94, 94, 94);
-    font-size: 22px;
+    font-size: 16px;
     font-style: italic;
 }
 
 #desc {
-    font-size: 28px;
+    font-size: 18px;
     font-weight: lighter;
-    top: 40%;
+    top: 30%;
 }
 
 .hsocials {
     position: absolute;
-    top: 50%;
-    left: 9.2%;
-    width: 70%;
+    width: 50%;
+    top: 40%;
+    left: 25%;
+}
+
+.grid {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .socials a {
-    position: relative;
+    flex: 0 0 32%;
+    margin-bottom: 15px;
     font-size: 18px;
     color: #fff;
     font-weight: lighter;
     text-decoration: none;
-    margin-left: 10px;
     transition: .3s;
 }
 
 .button {
-    position: relative;
     background-color: #525050;
     border: none;
     color: white;
-    padding: 25px;
+    padding: 20px;
     font-size: 16px;
     border-radius: 50%;
     width: 20px;
