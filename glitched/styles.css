@@ -20,16 +20,6 @@
     overflow: hidden;
 }
 
-.bg {
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1000;
-    background-image: url('images/grid.png');
-}
-
 body {
     position: sticky;
     min-height: 100vh;
@@ -174,4 +164,10 @@ body {
 .button:hover {
     background-color: #949191;
     border-radius: 30%;
+}
+
+.about-me {
+    position: absolute;
+    top: 120%;
+    left: 20%;
 }
