@@ -23,7 +23,7 @@
 body {
     position: sticky;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(36,37,34,0.9),rgba(36,37,34,0.9)), url('images/grid.png');
+    background-image: linear-gradient(rgba(36,37,34,0.9),rgba(36,37,34,0.9)), url('../images/grid.png');
 }
 
 #grid {
@@ -31,7 +31,7 @@ body {
     width: 150px;
     height: 150px;
     z-index: 0;
-    background: url('images/grid.png');
+    background: url('../images/grid.png');
     background-attachment: fixed;
     border-radius: 50%;
     top: calc(50% - 75px);
