@@ -3,5 +3,10 @@
     "myname": "Salut, je m'appelle",
     "cocolennon": "Cocolennon",
     "aka": "ou Coco",
-    "dev": "J'ai 15 ans et suis un développeur web et logiciel venant de"
+    "dev": "J'ai 15 ans et suis un développeur web et logiciel venant de",
+    "fr": "Fr",
+    "an": "an",
+    "ce": "ce",
+    "aboutme": "Un peu plus à propos de moi.",
+    "devlang": "J'apprends beaucoup de langages, frameworks et librairies."
 }
