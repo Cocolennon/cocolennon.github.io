@@ -15,64 +15,112 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
-        <span class="fbg">
-            <span class="bg">
-                <div id="grid"></div>
-            </span>
-            <div id="cursor"></div>
-        </span>
         <header class="header">
             <a href="#" class="logo">Cocolennon</a>
             <nav class="navbar">
+                <a href="#about-me" class="navbara" id="abme">About Me</a>
                 <!--
-                <a href="#about-me">About Me</a>
                 <a href="#">Projects</a>
                 <a href="#">Contact</a>
-                -->
                 <a href="#" onclick="setLang('en')">English</a>
-                <a href="#" onclick="setLang('fr')">Français</a>
+                <a href="#" onclick="setLang('fr')">Français</a>-->
+                <span class="lang-dropdown">
+                    <div class="ld-bg">
+                        <img class="ld-flag button-icon" draggable="false" alt="Current Language Flag" src="images/svgs/flags/en.svg" id="flg">
+                        <p style="margin-left:1vw;" id="flgt">English</p>
+                    </div>
+                    <div class="lang-options">
+                      <a href="#" class="lang-option" onclick="setLang('en')">
+                        <img class="ld-flag button-icon" draggable="false" alt="English Flag" src="images/svgs/flags/en.svg">
+                        <p style="margin-left:1vw;">English</p>
+                      </a>
+                      <a href="#" class="lang-option" onclick="setLang('fr')">
+                        <img class="ld-flag button-icon" draggable="false" alt="French Flag" src="images/svgs/flags/fr.svg">
+                        <p style="margin-left:1vw;">Français</p>
+                      </a>
+                      <a href="#" class="lang-option" onclick="setLang('es')">
+                        <img class="ld-flag button-icon" draggable="false" alt="Spanish Flag" src="images/svgs/flags/es.svg">
+                        <p style="margin-left:1vw;">Español</p>
+                      </a>
+                    </div>
+                </span>
             </nav>
         </header>
         <h1 class="name">
-            <span id="lname">Sup, my name's</span>
-            <span style="color: darkorchid;" id="lcoco"> Cocolennon</span>
+            <span id="lname">Sup, my name's </span>
+            <span style="color:darkorchid" id="lcoco">Cocolennon</span>
             <span class="aka" id="laka"> aka Coco</span>
         </h1>
-        <h1 class="name" id="desc">
+        <h1 class="desc">
             <span id="lshort">I'm a 15 year old software and web developer from </span>
             <span style="color:blue" id="lfr">Fr</span><span id="lan">an</span><span style="color:red" id="lce">ce</span>.
         </h1>
-        <header class="hsocials">
-            <nav class="socials">
-                <a href="https://www.youtube.com/@cocolennon_" target="_blank">
-                    <button class="button" style="background-image: url(images/svgs/youtube.svg);"></button>
+        <div class="socials">
+            <a href="https://www.youtube.com/@cocolennon_" target="_blank" draggable="false" class="button">
+                <img class="button-icon" draggable="false" alt="YouTube" src="images/svgs/socials/youtube.svg">
+            </a>
+            <a href="https://discord.gg/yqG4u2JnrV" target="_blank" draggable="false" class="button">
+                <img class="button-icon" draggable="false" alt="Discord" src="images/svgs/socials/discord.svg">
+            </a>
+            <a href="https://github.com/Cocolennon" target="_blank" draggable="false" class="button">
+                <img class="button-icon" draggable="false" alt="GitHub" src="images/svgs/socials/github.svg">
+            </a>
+            <a href="https://paypal.me/Cocolennon" target="_blank" draggable="false" class="button">
+                <img class="button-icon" draggable="false" alt="PayPal" src="images/svgs/socials/paypal.svg">
+            </a>
+            <a href="https://steamcommunity.com/id/Cocolennon/" target="_blank" draggable="false" class="button">
+                <img class="button-icon" draggable="false" alt="Steam" src="images/svgs/socials/steam.svg">
+            </a>
+            <a href="https://namemc.com/profile/CCocolennon.1" target="_blank" draggable="false" class="button">
+                <img class="button-icon" draggable="false" alt="NameMC" src="images/svgs/socials/namemc.svg">
+            </a>
+            <a href="https://e-z.bio/cocolennon" target="_blank" draggable="false" class="button">
+                <img class="button-icon" draggable="false" alt="E-Z Bio" src="images/svgs/socials/ezhost.svg">
+            </a>
+            <a href="https://www.twitch.tv/cocolennon_" target="_blank" draggable="false" class="button">
+                <img class="button-icon" draggable="false" alt="Twitch" src="images/svgs/socials/twitch.svg">
+            </a>
+            <a href="mailto:contact@cocolennon.xyz" target="_blank" draggable="false" class="button">
+                <img class="button-icon" draggable="false" alt="GMail" src="images/svgs/socials/gmail.svg">
+            </a>
+        </div>
+        <div class="about">    
+            <h1 id="about-me">A bit more about me.</h1>
+            <h2 id="devlang">I'm learning a lot of languages, libraries and frameworks.</h2>
+            <div class="langs">
+                <a href="java" target="_blank" draggable="false" class="button">
+                    <img class="button-icon" draggable="false" alt="Java" src="images/svgs/dev/lang/java.svg">
                 </a>
-                <a href="https://discord.gg/yqG4u2JnrV" target="_blank">
-                    <button class="button" style="background-image: url(images/svgs/discord.svg);"></button>
+                <a href="csharp" target="_blank" draggable="false" class="button">
+                    <img class="button-icon" draggable="false" alt="C#" src="images/svgs/dev/lang/csharp.svg">
                 </a>
-                <a href="https://github.com/Cocolennon" target="_blank">
-                    <button class="button" style="background-image: url(images/svgs/github.svg);"></button>
+                <a href="lua" target="_blank" draggable="false" class="button">
+                    <img class="button-icon" draggable="false" alt="Lua" src="images/svgs/dev/lang/lua.svg">
                 </a>
-                <a href="https://paypal.me/Cocolennon" target="_blank">
-                    <button class="button" style="background-image: url(images/svgs/paypal.svg);"></button>
+                <a href="javascript" target="_blank" draggable="false" class="button">
+                    <img class="button-icon rounded-corners" draggable="false" alt="JavaScript" src="images/svgs/dev/lang/javascript.svg">
                 </a>
-                <a href="https://steamcommunity.com/id/Cocolennon/" target="_blank">
-                    <button class="button" style="background-image: url(images/svgs/steam.svg);"></button>
+                <a href="html" target="_blank" draggable="false" class="button">
+                    <img class="button-icon" draggable="false" alt="HTML5" src="images/svgs/dev/lang/html.svg">
                 </a>
-                <a href="https://namemc.com/profile/CCocolennon.1" target="_blank">
-                    <button class="button" style="background-image: url(images/svgs/namemc.svg);"></button>
+                <a href="css" target="_blank" draggable="false" class="button">
+                    <img class="button-icon" draggable="false" alt="CSS3" src="images/svgs/dev/lang/css.svg">
                 </a>
-                <a href="https://e-z.bio/cocolennon" target="_blank">
-                    <button class="button" style="background-image: url(images/svgs/ezhost.svg);"></button>
+                <a href="typescript" target="_blank" draggable="false" class="button">
+                    <img class="button-icon rounded-corners" draggable="false" alt="TypeScript" src="images/svgs/dev/lang/typescript.svg">
                 </a>
-                <a href="https://www.twitch.tv/cocolennon_" target="_blank">
-                    <button class="button" style="background-image: url(images/svgs/twitch.svg);"></button>
+                <a href="nodejs" target="_blank" draggable="false" class="button">
+                    <img class="button-icon" draggable="false" alt="Node.JS" src="images/svgs/dev/lang/nodejs.svg">
                 </a>
-                <a href="mailto:contact@cocolennon.xyz" target="_blank">
-                    <button class="button" style="background-image: url(images/svgs/gmail.svg);"></button>
+                <a href="discordjs" target="_blank" draggable="false" class="button">
+                    <img class="button-icon rounded-corners" draggable="false" alt="Discord.JS" src="images/svgs/dev/lang/discordjs.svg">
                 </a>
-            </nav>
-        </header>
+                <a href="mysql" target="_blank" draggable="false" class="button">
+                    <img class="button-icon" draggable="false" alt="MySQL" src="images/svgs/dev/lang/mysql.svg">
+                </a>
+            </div>
+        </div>
+        <div class="e">eaea</div>
         <script src="script.js"></script>
     </body>
 </html>

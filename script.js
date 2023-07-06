@@ -2,20 +2,6 @@ if(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) 
     window.location = "mobile";
 }
 
-let grid = document.getElementById("grid");
-let gridHalfWidth = grid.offsetWidth / 2;
-
-let crs = document.getElementById("cursor");
-let crsHalfWidth = crs.offsetWidth / 2;
-
-document.onmousemove = function(e) {
-    grid.style.left = e.pageX - gridHalfWidth + "px";
-    grid.style.top = e.pageY - gridHalfWidth + "px";
-
-    crs.style.left = e.pageX - crsHalfWidth + "px";
-    crs.style.top = e.pageY - crsHalfWidth + "px";
-}
-
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 var lang = navigator.language.substring(0, 2);
@@ -29,10 +15,15 @@ function getLanguageFile(_callback) {
 function setLang(l) {
     if(l != lang) lang = l;
     getLanguageFile(function(lf) {
+        document.getElementById("abme").textContent = lf.abme;
+        document.getElementById("flgt").textContent = lf.lang;
+        document.getElementById("flg").src = "images/svgs/flags/" + lang + ".svg";
         document.title = lf.title;
         document.getElementById("lname").textContent = lf.myname;
         document.getElementById("laka").textContent = lf.aka;
         document.getElementById("lshort").textContent = lf.dev;
+        document.getElementById("about-me").textContent = lf.aboutme;
+        document.getElementById("devlang").textContent = lf.devlang;
     });
 }
 
