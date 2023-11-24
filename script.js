@@ -24,6 +24,7 @@ function setLang(l) {
         document.getElementById("lshort").textContent = lf.dev;
         document.getElementById("about-me").textContent = lf.aboutme;
         document.getElementById("devlang").textContent = lf.devlang;
+        document.getElementById("tools").textContent = lf.tools;
     });
 }
 
