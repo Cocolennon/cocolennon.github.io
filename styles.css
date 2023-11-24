@@ -207,6 +207,14 @@ body {
     width: 100%;
 }
 
+.langs-2 {
+    position: absolute;
+    top: 141%;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
 .rounded-corners {
     border-radius: 0.375rem;
 }
