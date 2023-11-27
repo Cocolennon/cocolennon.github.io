@@ -60,7 +60,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 0.28;
+    flex: 0.32;
 }
 
 .navbara {
@@ -271,7 +271,7 @@ body {
 
 .e {
     position: absolute;
-    top: 209%;
+    top: 261%;
     color: rgba(0, 0, 0, 0.0000001);
 }
 
@@ -293,4 +293,25 @@ body {
     left: 0.5%;
     -webkit-transform:scale(1.15);
     transform:scale(1.15);
+}
+
+#projects {
+    position: absolute;
+    top: 223%;
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 44px;
+}
+
+#projs {
+    position: absolute;
+    top: 233%;
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 28px;
+    font-weight: lighter;
 }
