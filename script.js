@@ -22,7 +22,7 @@ function setLang(l) {
         document.getElementById("about-me").textContent = lf.aboutme;
         document.getElementById("devlang").textContent = lf.devlang;
         document.getElementById("tools").textContent = lf.tools;
-        document.getElementById("projects").textContent = lf.projects
+        document.getElementById("projects").textContent = lf.projects;
         document.getElementById("projs").textContent = lf.psub;
     });
 }
