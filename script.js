@@ -12,6 +12,7 @@ function setLang(l) {
     if(l != lang) lang = l;
     getLanguageFile(function(lf) {
         document.getElementById("abme").textContent = lf.abme;
+        document.getElementById("nprojects").textContent = lf.projects;
         document.getElementById("flgt").textContent = lf.lang;
         document.getElementById("flg").src = "images/svgs/flags/" + lang + ".svg";
         document.title = lf.title;
