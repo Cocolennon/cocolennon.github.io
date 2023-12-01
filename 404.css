@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-image: linear-gradient(rgba(36,37,34,0.9),rgba(36,37,34,0.9)), url('images/grid.png');
+}
+
+.errorpage {
+    color: #fff;
+    display: table;
+    width: 100%;
+    height: 225px;
+    text-align: center;
+}
+
+.errorpage2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.discordpfp {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 50rem;
+    border: darkorchid;
+    border-style: solid;
+    border-width: 0.2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pfp {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    top: 1%;
+    left: 0.5%;
+    -webkit-transform:scale(1.15);
+    transform:scale(1.15);
+}
+
+@keyframes rotate360 {
+    to { transform: rotate(360deg); }
+}
+
+.discordpfp { animation: 10s rotate360 infinite linear; }
