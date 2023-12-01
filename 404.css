@@ -46,10 +46,6 @@ body {
     position: relative;
     width: 300px;
     height: 300px;
-    top: 1%;
-    left: 0.5%;
-    -webkit-transform:scale(1.15);
-    transform:scale(1.15);
 }
 
 @keyframes rotate360 {
