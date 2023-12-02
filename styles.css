@@ -60,7 +60,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 0.32; /*hm yes*/
+    flex: 0.32;
 }
 
 .navbara {
@@ -121,11 +121,11 @@ body {
 
 .lang-dropdown {
     border-radius: 30%;
-    padding: 10px 0;
     display: inline-block;
     align-self: center;
     position: relative;
     margin-left: 3vw;
+    vertical-align: middle;
 }
 
 .lang-options {
