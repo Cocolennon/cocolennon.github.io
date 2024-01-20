@@ -3,28 +3,28 @@ function sendMessage() {
     var channel = document.getElementById("channel").value;
     var message = document.getElementById("message").value;
 
-    var url = "https://discord.com/api/v9/channels/" + channel + "/messages";
+    var url = "https://discord.com/api/channels/" + channel + "/messages";
 
-    /*fetch(url, {
-        "headers": {
-            "Authorization": "Bot " + token,
-            "User-Agent":"Coco Lennon (https://www.cocolennon.xyz, v0.1)",
-            "Content-Type":"application/json"
-        },
-        "body": JSON.stringify({"content": message}),
-        "method": "POST",
-        "mode":"no-cors"
-    }).then(response => console.log(JSON.stringify(response)));*/
+    /*
+    request = new XMLHttpRequest();
+    request.withCredentials = true;
+    request.open("POST", url);
+    request.setRequestHeader("authorization", "Bot " + token);
+    request.setRequestHeader("accept", "/");
+    request.setRequestHeader("authority", "discord.com");
+    request.setRequestHeader("content-type", "application/json");
+    request.setRequestHeader("origin", "http://localhost:8000");
+    request.send(JSON.stringify({ content: message }));*/
 
     fetch(url, {
-        "headers": {
-            "accept": "*/*",
-            "accept-language": "en-GB,fr-FR;q=0.9",
-            "authorization": token,
-            "content-type": "application/json",
+        headers: {
+            "Authorization": "Bot " + token,
+            "User-Agent":"Coco Lennon (https://www.cocolennon.xyz, v0.1)",
+            "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8",
+            "origin": null,
         },
-        "body": JSON.stringify({"content": message}),
-        "method": "POST",
-        "mode": "no-cors",
-    }).then(response => console.log(JSON.stringify(response)));;
+        body: JSON.stringify({"content": message}),
+        method: "POST",
+        mode: "cors"
+    }).then(response => console.log(JSON.stringify(response)));
 }
