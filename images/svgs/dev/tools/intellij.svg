@@ -1,17 +1,62 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" class="idea-logo" data-test="svg-sprite-image" data-test-sprite-id="IntelliJ-IDEA" width="96"  height="96" ><defs><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" id="IntelliJ-IDEA">
-<g id="IntelliJ-IDEA_IntelliJ-IDEA" clip-path="url(#IntelliJ-IDEA_clip0_186_18890)" fill="none">
-<g id="IntelliJ-IDEA_Group" fill="none">
-<g id="IntelliJ-IDEA_Group_2" fill="none">
-<path id="IntelliJ-IDEA_Vector" d="M96 0H0V96H96V0Z" fill="black"></path>
-<path id="IntelliJ-IDEA_Vector_2" d="M48 78H12V84H48V78Z" fill="#FFFFFF"></path>
-<path id="IntelliJ-IDEA_Vector_3" d="M29.9304 18.5902V12.0298H12.0372V18.5902H17.0472V41.2534H12.0372V47.815H29.9304V41.2534H24.9204V18.5902H29.9304Z" fill="#FFFFFF"></path>
-<path id="IntelliJ-IDEA_Vector_4" d="M47.1061 48.3259C44.6659 48.4089 42.2454 47.8631 40.0768 46.7411C38.2991 45.7775 36.7137 44.4953 35.3995 42.9585L40.3587 37.4369C41.2578 38.4583 42.2993 39.3449 43.4512 40.0694C44.4904 40.7008 45.6855 41.0287 46.9014 41.0161C47.5562 41.0513 48.2108 40.9438 48.8198 40.7009C49.4289 40.458 49.9779 40.0856 50.4287 39.6094C51.3949 38.3089 51.8501 36.6989 51.7077 35.085V12.0293H59.7847V35.4427C59.8256 37.3372 59.5312 39.2241 58.9152 41.0161C58.3809 42.5119 57.526 43.8728 56.4103 45.0034C55.276 46.1209 53.9045 46.9684 52.3977 47.483C50.6948 48.0637 48.9052 48.3488 47.1061 48.3259Z" fill="#FFFFFF"></path>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+<g>
+	<g>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0.7898" y1="40.0893" x2="33.3172" y2="40.0893">
+			<stop  offset="0.2581" style="stop-color:#F97A12"/>
+			<stop  offset="0.4591" style="stop-color:#B07B58"/>
+			<stop  offset="0.7241" style="stop-color:#577BAE"/>
+			<stop  offset="0.9105" style="stop-color:#1E7CE5"/>
+			<stop  offset="1" style="stop-color:#087CFA"/>
+		</linearGradient>
+		<polygon style="fill:url(#SVGID_1_);" points="17.7,54.6 0.8,41.2 9.2,25.6 33.3,35 		"/>
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="25.7674" y1="24.88" x2="79.424" y2="54.57">
+			<stop  offset="0" style="stop-color:#F97A12"/>
+			<stop  offset="7.179946e-002" style="stop-color:#CB7A3E"/>
+			<stop  offset="0.1541" style="stop-color:#9E7B6A"/>
+			<stop  offset="0.242" style="stop-color:#757B91"/>
+			<stop  offset="0.3344" style="stop-color:#537BB1"/>
+			<stop  offset="0.4324" style="stop-color:#387CCC"/>
+			<stop  offset="0.5381" style="stop-color:#237CE0"/>
+			<stop  offset="0.6552" style="stop-color:#147CEF"/>
+			<stop  offset="0.7925" style="stop-color:#0B7CF7"/>
+			<stop  offset="1" style="stop-color:#087CFA"/>
+		</linearGradient>
+		<polygon style="fill:url(#SVGID_2_);" points="70,18.7 68.7,59.2 41.8,70 25.6,59.6 49.3,35 38.9,12.3 48.2,1.1 		"/>
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="63.2277" y1="42.9153" x2="48.2903" y2="-1.7191">
+			<stop  offset="0" style="stop-color:#FE315D"/>
+			<stop  offset="7.840246e-002" style="stop-color:#CB417E"/>
+			<stop  offset="0.1601" style="stop-color:#9E4E9B"/>
+			<stop  offset="0.2474" style="stop-color:#755BB4"/>
+			<stop  offset="0.3392" style="stop-color:#5365CA"/>
+			<stop  offset="0.4365" style="stop-color:#386DDB"/>
+			<stop  offset="0.5414" style="stop-color:#2374E9"/>
+			<stop  offset="0.6576" style="stop-color:#1478F3"/>
+			<stop  offset="0.794" style="stop-color:#0B7BF8"/>
+			<stop  offset="1" style="stop-color:#087CFA"/>
+		</linearGradient>
+		<polygon style="fill:url(#SVGID_3_);" points="70,18.7 48.7,43.9 38.9,12.3 48.2,1.1 		"/>
+		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="10.7204" y1="16.473" x2="55.5237" y2="90.58">
+			<stop  offset="0" style="stop-color:#FE315D"/>
+			<stop  offset="4.023279e-002" style="stop-color:#F63462"/>
+			<stop  offset="0.1037" style="stop-color:#DF3A71"/>
+			<stop  offset="0.1667" style="stop-color:#C24383"/>
+			<stop  offset="0.2912" style="stop-color:#AD4A91"/>
+			<stop  offset="0.5498" style="stop-color:#755BB4"/>
+			<stop  offset="0.9175" style="stop-color:#1D76ED"/>
+			<stop  offset="1" style="stop-color:#087CFA"/>
+		</linearGradient>
+		<polygon style="fill:url(#SVGID_4_);" points="33.7,58.1 5.6,68.3 10.1,52.5 16,33.1 0,27.7 10.1,0 32.1,2.7 53.7,27.4 		"/>
+	</g>
+	<g>
+		<rect x="13.7" y="13.5" style="fill:#000000;" width="43.2" height="43.2"/>
+		<rect x="17.7" y="48.6" style="fill:#FFFFFF;" width="16.2" height="2.7"/>
+		<polygon style="fill:#FFFFFF;" points="29.4,22.4 29.4,19.1 20.4,19.1 20.4,22.4 23,22.4 23,33.7 20.4,33.7 20.4,37 29.4,37 
+			29.4,33.7 26.9,33.7 26.9,22.4 		"/>
+		<path style="fill:#FFFFFF;" d="M38,37.3c-1.4,0-2.6-0.3-3.5-0.8c-0.9-0.5-1.7-1.2-2.3-1.9l2.5-2.8c0.5,0.6,1,1,1.5,1.3
+			c0.5,0.3,1.1,0.5,1.7,0.5c0.7,0,1.3-0.2,1.8-0.7c0.4-0.5,0.6-1.2,0.6-2.3V19.1h4v11.7c0,1.1-0.1,2-0.4,2.8c-0.3,0.8-0.7,1.4-1.3,2
+			c-0.5,0.5-1.2,1-2,1.2C39.8,37.1,39,37.3,38,37.3"/>
+	</g>
 </g>
-</g>
-</g>
-<defs>
-<clipPath id="IntelliJ-IDEA_clip0_186_18890">
-<rect width="96" height="96" fill="white"></rect>
-</clipPath>
-</defs>
-</symbol></defs><use href="#IntelliJ-IDEA"></use></svg>
+</svg>
