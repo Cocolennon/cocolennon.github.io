@@ -38,6 +38,12 @@ jobs:
         with:
           name: github-pages
           path: '.'
+      - name: Wait Upload
+        run: sleep 10
+      - name: List Available Artifacts
+        run: |
+          echo "Listing available artifacts..."
+          curl -s https://api.github.com/repos/${{ github.repository }}/actions/artifacts | jq '.artifacts[] | {name: .name, id: .id}'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
