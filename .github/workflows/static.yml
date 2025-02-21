@@ -33,16 +33,13 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2  # ✅ Use upload-pages-artifact again
+      - name: Upload artifact (GitHub Pages)
+        uses: actions/upload-artifact@v4  # ✅ Use upload-artifact@v4
         with:
-          path: '.'  # ✅ Upload the full repository
-      - name: List artifacts (Debugging Step)
-        run: |
-          echo "Listing uploaded artifacts..."
-          gh run list
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: github-pages  # ✅ Must match what deploy-pages expects
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
+        with:
+          artifact_name: github-pages  # ✅ Explicitly specify the artifact name
