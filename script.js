@@ -3,7 +3,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 var lang = navigator.language.substring(0, 2);
 
 function getLanguageFile(_callback) {
-    $.getJSON("https://www.cocolennon.xyz/language/" + lang + ".json", function(data) {
+    $.getJSON("https://bio.cocolennon.xyz/language/" + lang + ".json", function(data) {
         _callback(data);
     });
 }
