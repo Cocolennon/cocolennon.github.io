@@ -397,7 +397,48 @@ main.main-content {
     margin-bottom: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 640px) {
+    .navbara {
+        font-size: 24px;
+    }
+    .ld-bg p, .lang-option p {
+        display: none;
+    }
+    .name {
+        margin-top: 60px;
+        line-height: 1;
+    }
+    .aka {
+        display: none;
+    }
+    .socials {
+        width: 85%;
+    }
+    .presentation {
+        padding-bottom: 0;
+    }
+    .about {
+        padding-top: 0;
+    }
+    .projholder {
+        width: 261px;
+        height: 145px;
+    }
+    .projtitle {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        white-space: wrap;
+    }
+    .projdesc {
+        display: none;
+    }
+    .footer p {
+        transform: scale(1.8);
+        transform-origin: center center;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
     .header {
         flex-direction: column;
     }
@@ -445,22 +486,34 @@ main.main-content {
     }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .header {
+        flex-direction: column;
+        padding: 20px 25px;
+    }
+    .logobar {
+        margin-bottom: 20px;
+    }
     .navbara {
         font-size: 24px;
+        text-align: center;
     }
     .ld-bg p, .lang-option p {
         display: none;
     }
     .name {
-        margin-top: 60px;
+        font-size: 28px;
+        margin-top: 120px;
         line-height: 1;
+    }
+    #lcoco {
+        font-size: 42px;
     }
     .aka {
         display: none;
     }
     .socials {
-        width: 85%;
+        width: 90%;
     }
     .presentation {
         padding-bottom: 0;
@@ -468,12 +521,16 @@ main.main-content {
     .about {
         padding-top: 0;
     }
+    .langs, .tools {
+        width: 90%;
+    }
     .projholder {
-        width: 261px;
-        height: 145px;
+        width: 286px;
+        height: 150px;
     }
     .projtitle {
         top: 50%;
+        font-size: 30px;
         transform: translate(-50%, -50%);
         white-space: wrap;
     }
@@ -481,7 +538,5 @@ main.main-content {
         display: none;
     }
     .footer p {
-        transform: scale(1.8);
-        transform-origin: center center;
     }
 }
