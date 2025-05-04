@@ -397,6 +397,54 @@ main.main-content {
     margin-bottom: auto;
 }
 
+@media screen and (min-width: 480px) {
+    .header {
+        flex-direction: column;
+    }
+    .navbara {
+        font-size: 24px;
+    }
+    .ld-bg p, .lang-option p {
+        display: none;
+    }
+    .name {
+        font-size: 36px;
+        margin-top: 60px;
+        line-height: 1;
+    }
+    #lcoco {
+        font-size: 68px;
+    }
+    .aka {
+        display: none;
+    }
+    .socials {
+        width: 85%;
+    }
+    .presentation {
+        padding-bottom: 0;
+    }
+    .about {
+        padding-top: 0;
+    }
+    .langs, .tools {
+        width: 90%;
+    }
+    .projtitle {
+        top: 50%;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        white-space: wrap;
+    }
+    .projdesc {
+        display: none;
+    }
+    .footer p {
+        transform: scale(1.8);
+        transform-origin: center center;
+    }
+}
+
 @media screen and (min-width: 640px) {
     .navbara {
         font-size: 24px;
