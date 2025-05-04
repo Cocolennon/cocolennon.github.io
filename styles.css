@@ -82,6 +82,8 @@ body {
 }
 
 .navbar {
+    display: flex;
+    align-items: center;
     margin-right: 25px;
 }
 
@@ -123,7 +125,6 @@ body {
 .lang-dropdown {
     border-radius: 30%;
     display: inline-block;
-    align-self: center;
     position: relative;
     margin-left: 3vw;
     vertical-align: top;
@@ -238,6 +239,8 @@ main.main-content {
     justify-content: center;
     gap: 16px;
     margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about {
@@ -382,14 +385,55 @@ main.main-content {
 }
 
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px;
     font-size: 14px;
     margin-top: auto;
+    margin-bottom: auto;
 }
 
 @media screen and (min-width: 640px) {
-
+    .navbara {
+        font-size: 24px;
+    }
+    .ld-bg p, .lang-option p {
+        display: none;
+    }
+    .name {
+        margin-top: 60px;
+        line-height: 1;
+    }
+    .aka {
+        display: none;
+    }
+    .socials {
+        width: 85%;
+    }
+    .presentation {
+        padding-bottom: 0;
+    }
+    .about {
+        padding-top: 0;
+    }
+    .projholder {
+        width: 261px;
+        height: 145px;
+    }
+    .projtitle {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        white-space: wrap;
+    }
+    .projdesc {
+        display: none;
+    }
+    .footer p {
+        transform: scale(1.8);
+        transform-origin: center center;
+    }
 }
