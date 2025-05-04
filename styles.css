@@ -26,11 +26,11 @@
     background: #a600ff;
 }
 
-html {
+html, body {
+    display: block;
     min-height: 100%;
-}
-
-body {
+    margin: 0;
+    padding: 0;
     background-image: linear-gradient(rgba(36,37,34,0.9),rgba(36,37,34,0.9)), url('images/grid.png');
 }
 
@@ -175,6 +175,12 @@ body {
     font-size: 44px;
 }
 
+#lcoco {
+    text-wrap: nowrap;
+    font-size: 77px;
+    color: darkorchid;
+}
+
 .aka {
     color: rgb(94, 94, 94);
     font-size: 22px;
@@ -299,12 +305,18 @@ body {
 }
 
 @media screen and (min-width: 640px) {
+    html, body {
+        display: block;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+    }
     .header {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        padding: 40px 25px;
+        padding: 20px 25px;
         background:#46354e;
         display: inline-flex;
         justify-content: space-between;
@@ -313,31 +325,31 @@ body {
         z-index: 100;
         box-shadow: 0 0 30px;
     }
-    .logo {
-        font-size: 40px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: bolder;
-        text-wrap: nowrap;
-        margin-left: 15px;
-        margin-bottom: 10px;
-    }
     .logobar {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+    .logo {
+        font-size: 30px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bolder;
+        white-space: nowrap;
+        top: 50%;
+        margin-left: 15px;
+    }
     .discordpfp {
         overflow: hidden;
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         border-radius: 50px;
         border: 0.2rem solid darkorchid;
     }
     .pfp {
         position: relative;
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
     }
     .navbar {
         margin-right: 25px;
@@ -365,19 +377,19 @@ body {
     }
     .name {
         position: absolute;
-        top: 250px;
-        left: 75%;
+        top: 125px;
+        left: 50%;
         transform: translateX(-50%);
         text-align: center;
         color: #fff;
-        line-height: 1.2;
+        line-height: 1.0;
     }
     #lname {
-        font-size: 48px;
+        font-size: 40px;
     }
     #lcoco {
         text-wrap: nowrap;
-        font-size: 77px;
+        font-size: 69px;
         color: darkorchid;
     }
     .coco-wrapper {
@@ -390,15 +402,15 @@ body {
         left: 103%;
         margin-left: 0.5ch;
         color: rgb(94, 94, 94);
-        font-size: 33px;
+        font-size: 29px;
         font-style: italic;
         opacity: 0.7;
         white-space: nowrap;
     }
     .desc {
         position: absolute;
-        top: 450px;
-        left: 75%;
+        top: 260px;
+        left: 50%;
         transform: translateX(-50%);
         color: #fff;
         font-size: 48px;
@@ -409,22 +421,22 @@ body {
     .socials {
         display: flex;
         flex-wrap: wrap;
-        width: 75%;
-        gap: 15px;
+        width: 50%;
+        gap: 20px;
         justify-content: center;
-        top: 620px;
-        left: 75%;
+        top: 410px;
+        left: 50%;
         transform: translateX(-50%);
     }
     .button-icon {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
     #about-me {
         position: absolute;
-        left: 75%;
+        left: 50%;
         transform: translateX(-50%);
-        top: 870px;
+        top: 620px;
         text-align: center;
         display: block;
         width: 100%;
@@ -433,9 +445,9 @@ body {
     }
     #devlang {
         position: absolute;
-        left: 75%;
+        left: 50%;
         transform: translateX(-50%);
-        top: 970px;
+        top: 720px;
         text-align: center;
         display: block;
         width: 100%;
@@ -446,18 +458,18 @@ body {
     .langs {
         display: flex;
         flex-wrap: wrap;
-        width: 75%;
+        width: 50%;
         gap: 15px;
         justify-content: center;
-        top: 1120px;
-        left: 75%;
+        top: 870px;
+        left: 50%;
         transform: translateX(-50%);
     }
     #tools {
         position: absolute;
-        left: 75%;
+        left: 50%;
         transform: translateX(-50%);
-        top: 1400px;
+        top: 1050px;
         text-align: center;
         display: block;
         width: 100%;
@@ -468,18 +480,18 @@ body {
     .tools {
         display: flex;
         flex-wrap: wrap;
-        width: 75%;
+        width: 50%;
         gap: 15px;
         justify-content: center;
-        top: 1550px;
-        left: 75%;
+        top: 1200px;
+        left: 50%;
         transform: translateX(-50%);
     }
     #projects {
         position: absolute;
-        left: 75%;
+        left: 50%;
         transform: translateX(-50%);
-        top: 1880px;
+        top: 1420px;
         text-align: center;
         display: block;
         width: 100%;
@@ -488,9 +500,9 @@ body {
     }
     #projs {
         position: absolute;
-        left: 75%;
+        left: 50%;
         transform: translateX(-50%);
-        top: 1980px;
+        top: 1500px;
         text-align: center;
         display: block;
         width: 100%;
@@ -502,14 +514,15 @@ body {
         display: flex;
         flex-wrap: wrap;
         position: absolute;
-        top: 2180px;
+        top: 1605px;
         gap: 20px;
         width: 100%;
         align-items: center;
         justify-content: center;
         text-align: center;
-        left: 75%;
+        left: 50%;
         transform: translateX(-50%);
+        margin-bottom: 60px;
     }
     .projholder {
         position: relative;
@@ -521,6 +534,38 @@ body {
         transition: 0.3s;
         text-align: center;
         box-shadow: 0 5px 5px black;
+    }
+    .projtitle {
+        top: 5px;
+        width: 100%;
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        pointer-events: none;
+    }
+    .projdesc {
+        top: 45px;
+        left: 12.5%;
+        width: 75%;
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        font-size: 15px;
+        pointer-events: none;
+    }
+    .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        margin-top: auto;
+    }
+    .e {
+        position: absolute;
+        height: 3px;
+        top: 2005px;
+        color: rgba(0, 0, 0, 0.0000001);
     }
 }
 
@@ -554,28 +599,11 @@ body {
     filter:brightness(25%)
 }
 
-.projtitle {
-    top: 5%;
-    width: 100%;
-    position: absolute;
-    color: #fff;
+.footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    pointer-events: none;
-}
-
-.projdesc {
-    top: 35%;
-    left: 12.5%;
-    width: 75%;
-    position: absolute;
-    text-align: center;
-    color: #fff;
-    font-size: 16px;
-    pointer-events: none;
-}
-
-.e {
-    position: absolute;
-    top: 330%;
-    color: rgba(0, 0, 0, 0.0000001);
+    padding: 20px;
+    font-size: 14px;
+    margin-top: auto;
 }
