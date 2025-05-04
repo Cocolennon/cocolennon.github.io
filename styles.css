@@ -63,6 +63,8 @@ body {
     justify-content: center;
     align-items: center;
     flex: 0.28;
+    border-bottom: none;
+    text-decoration: none;
 }
 
 .discordpfp {
@@ -395,124 +397,6 @@ main.main-content {
     font-size: 14px;
     margin-top: auto;
     margin-bottom: auto;
-}
-
-@media screen and (min-height: 1844px) and (orientation: portrait) {
-    .ld-bg p, .lang-option p {
-        display: block;
-    }
-    .langs, .tools {
-        width: 95%;
-    }
-    .projholder {
-        width: 280px;
-        height: 160px;
-    }
-    .projtitle {
-        font-size: 32px;
-    }
-}
-
-@media screen and (min-width: 1844px) and (orientation: landscape) {
-    .ld-bg p, .lang-option p {
-        display: block;
-    }
-    .langs, .tools {
-        width: 95%;
-    }
-    .projholder {
-        width: 452px;
-        height: 240px;
-    }
-    .projtitle {
-        position: absolute;
-        top: 5px;
-        font-size: 30px;
-        white-space: nowrap;
-        transform: translateX(-50%);
-    }
-    .projdesc {
-        font-size: 22px;
-        display: block;
-    }
-}
-
-@media screen and (min-height: 1536px) and (max-height: 1843px) and (orientation: portrait) {
-    .ld-bg p, .lang-option p {
-        display: block;
-    }
-    .langs, .tools {
-        width: 95%;
-    }
-    .projholder {
-        width: 280px;
-        height: 160px;
-    }
-    .projtitle {
-        font-size: 32px;
-    }
-}
-
-@media screen and (min-width: 1536px) and (max-width: 1843px) and (orientation: landscape) {
-    .ld-bg p, .lang-option p {
-        display: block;
-    }
-    .langs, .tools {
-        width: 95%;
-    }
-    .projholder {
-        width: 360px;
-        height: 200px;
-    }
-    .projtitle {
-        position: absolute;
-        top: 5px;
-        font-size: 32px;
-        white-space: nowrap;
-        transform: translateX(-50%);
-    }
-    .projdesc {
-        display: block;
-    }
-}
-
-@media screen and (min-height: 1280px) and (max-height: 1535px) and (orientation: portrait) {
-    .ld-bg p, .lang-option p {
-        display: block;
-    }
-    .langs, .tools {
-        width: 95%;
-    }
-    .projholder {
-        width: 280px;
-        height: 160px;
-    }
-    .projtitle {
-        font-size: 32px;
-    }
-}
-
-@media screen and (min-width: 1280px) and (max-width: 1535px) and (orientation: landscape) {
-    .ld-bg p, .lang-option p {
-        display: block;
-    }
-    .langs, .tools {
-        width: 95%;
-    }
-    .projholder {
-        width: 360px;
-        height: 200px;
-    }
-    .projtitle {
-        position: absolute;
-        top: 5px;
-        font-size: 32px;
-        white-space: nowrap;
-        transform: translateX(-50%);
-    }
-    .projdesc {
-        display: block;
-    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: portrait) {  }
@@ -964,5 +848,123 @@ main.main-content {
         display: none;
     }
     .footer p {
+    }
+}
+
+@media screen and (min-height: 1844px) and (orientation: portrait) {
+    .ld-bg p, .lang-option p {
+        display: block;
+    }
+    .langs, .tools {
+        width: 95%;
+    }
+    .projholder {
+        width: 280px;
+        height: 160px;
+    }
+    .projtitle {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1844px) and (orientation: landscape) {
+    .ld-bg p, .lang-option p {
+        display: block;
+    }
+    .langs, .tools {
+        width: 95%;
+    }
+    .projholder {
+        width: 452px;
+        height: 240px;
+    }
+    .projtitle {
+        position: absolute;
+        top: 5px;
+        font-size: 30px;
+        white-space: nowrap;
+        transform: translateX(-50%);
+    }
+    .projdesc {
+        font-size: 22px;
+        display: block;
+    }
+}
+
+@media screen and (min-height: 1536px) and (max-height: 1843px) and (orientation: portrait) {
+    .ld-bg p, .lang-option p {
+        display: block;
+    }
+    .langs, .tools {
+        width: 95%;
+    }
+    .projholder {
+        width: 280px;
+        height: 160px;
+    }
+    .projtitle {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1536px) and (max-width: 1843px) and (orientation: landscape) {
+    .ld-bg p, .lang-option p {
+        display: block;
+    }
+    .langs, .tools {
+        width: 95%;
+    }
+    .projholder {
+        width: 360px;
+        height: 200px;
+    }
+    .projtitle {
+        position: absolute;
+        top: 5px;
+        font-size: 32px;
+        white-space: nowrap;
+        transform: translateX(-50%);
+    }
+    .projdesc {
+        display: block;
+    }
+}
+
+@media screen and (min-height: 1280px) and (max-height: 1535px) and (orientation: portrait) {
+    .ld-bg p, .lang-option p {
+        display: block;
+    }
+    .langs, .tools {
+        width: 95%;
+    }
+    .projholder {
+        width: 280px;
+        height: 160px;
+    }
+    .projtitle {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1535px) and (orientation: landscape) {
+    .ld-bg p, .lang-option p {
+        display: block;
+    }
+    .langs, .tools {
+        width: 95%;
+    }
+    .projholder {
+        width: 360px;
+        height: 200px;
+    }
+    .projtitle {
+        position: absolute;
+        top: 5px;
+        font-size: 32px;
+        white-space: nowrap;
+        transform: translateX(-50%);
+    }
+    .projdesc {
+        display: block;
     }
 }
